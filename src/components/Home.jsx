@@ -6,6 +6,7 @@ import Header from "./partials/Header";
 import { data } from "react-router-dom";
 import HorizontalCards from "./partials/HorizontalCards";
 import Dropdown from "./partials/Dropdown";
+import Loading from "./Loading";
 
 const Home = () => {
   document.title = "TCSTV | Homepage";
@@ -83,7 +84,7 @@ const Home = () => {
     </>
   ) : (
     <div className="w-full h-screen bg-zinc-900 text-white flex justify-center items-center text-3xl">
-      Loading...
+      <Loading/>
     </div>
   );
 };
